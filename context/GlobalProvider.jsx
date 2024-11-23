@@ -5,8 +5,8 @@ const GlobalContext = createContext();
 export const useGlobalContext = () => useContext(GlobalContext);
 
 const GlobalProvider = ({ children }) => {
-  const [isLoggedIn] = useState(false);
-  cosnt[(UserActivation, setUser)] = useState(null);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  cosnt[(user, setUser)] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     getCurrentUser
@@ -40,3 +40,5 @@ const GlobalProvider = ({ children }) => {
     </GlobalContext.Provider>
   );
 };
+
+export default GlobalProvider;

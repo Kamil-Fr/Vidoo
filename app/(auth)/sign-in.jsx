@@ -16,12 +16,15 @@ const SignIn = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const submit = async () => {
-    if (!form.email || !form.password) {
+    if (form.email === "" || form.password === "") {
       Alert.alert("Error", "Please fill all the fields.");
     }
     setIsSubmitting(true);
     try {
       await signIn(form.email, form.password);
+      setSourceMapRange(result);
+      setIsLogged(true);
+      Alert.alert("Success", "User signed in successfully");
       router.replace("/home");
     } catch (error) {
       Alert.alert("Error", error.message);
