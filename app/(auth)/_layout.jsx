@@ -3,7 +3,7 @@ import React from "react";
 import { Stack } from "expo-router";
 import { ScreenStack } from "react-native-screens";
 import { StatusBar } from "expo-status-bar";
-import GlobalProvider from "../../context/GlobalProvider";
+import { GlobalProvider } from "../../context/GlobalProvider";
 
 const AuthLayout = () => {
   return (
