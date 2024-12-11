@@ -3,9 +3,10 @@
     "name": "Vidoo",
     "slug": "Vidoo",
     "version": "1.0.0",
+    "platforms": ["android", "ios"],
     "orientation": "portrait",
     "icon": "",
-    "scheme": "Vidoo",
+    "scheme": "vidoo",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "splash": {
@@ -15,14 +16,16 @@
     },
     "ios": {
       "supportsTablet": true,
-      "package": "com.kamil-fr.vidoo"
+      "bundleIdentifier": "com.kamilfr.vidoo"
     },
     "android": {
+      
+      "jsEngine": "jsc",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.kamil-fr.vidoo"
+      "package": "com.kamilfr.vidoo"
     },
     "web": {
       "bundler": "metro",
