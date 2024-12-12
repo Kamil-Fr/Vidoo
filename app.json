@@ -3,12 +3,13 @@
     "name": "Vidoo",
     "slug": "Vidoo",
     "version": "1.0.0",
-    "platforms": ["android", "ios"],
+    "platforms": ["android", "ios", "web"],
     "orientation": "portrait",
     "icon": "",
     "scheme": "vidoo",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -19,8 +20,8 @@
       "bundleIdentifier": "com.kamilfr.vidoo"
     },
     "android": {
+      "jsEngine": "hermes",
       
-      "jsEngine": "jsc",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
