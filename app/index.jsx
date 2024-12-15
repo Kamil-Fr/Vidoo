@@ -6,7 +6,7 @@ import { images } from "../constants";
 import CustomButton from "../components/CustomButton";
 import { useGlobalContext } from "../context/GlobalProvider";
 
-export default function App() {
+const Welcome = () => {
   const { loading, isLogged } = useGlobalContext();
   if (!loading && isLogged) {
     router.push("/home");
@@ -51,4 +51,5 @@ export default function App() {
       <StatusBar backgroundColor="#161622" style="light" />
     </SafeAreaView>
   );
-}
+};
+export default Welcome;

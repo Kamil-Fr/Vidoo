@@ -3,12 +3,11 @@
     "name": "Vidoo",
     "slug": "Vidoo",
     "version": "1.0.0",
-    "platforms": ["android", "ios", "web"],
-    "orientation": "portrait",
-    "icon": "",
+       "orientation": "portrait",
+    "icon": "./assets/icon.png",
     "scheme": "vidoo",
-    "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
+    "userInterfaceStyle": "light",
+    // "newArchEnabled": true,
     
     "splash": {
       "image": "./assets/splash.png",
@@ -16,8 +15,8 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.kamilfr.vidoo"
+      "supportsTablet": true
+      // "bundleIdentifier": "com.kamilfr.vidoo"
     },
     "android": {
       "jsEngine": "hermes",
@@ -29,8 +28,8 @@
       "package": "com.kamilfr.vidoo"
     },
     "web": {
-      "bundler": "metro",
-      "output": "static",
+      // "bundler": "metro",
+      // "output": "static",
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
