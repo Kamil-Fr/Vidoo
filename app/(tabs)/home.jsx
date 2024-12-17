@@ -1,6 +1,7 @@
-import { Text, View, FlatList, Image, RefreshControl } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
 import { useState } from "react";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { FlatList, Image, RefreshControl, Text, View } from "react-native";
+
 import { images } from "../../constants";
 import useAppwrite from "../../lib/useAppwrite";
 import { getAllPosts, getLatestPosts } from "../../lib/appwrite";
@@ -17,8 +18,15 @@ const Home = () => {
     await refetch();
     setRefreshing(false);
   };
+
+  // one flatlist
+  // with list header
+  // and horizontal flatlist
+
+  //  we cannot do that with just scrollview as there's both horizontal and vertical scroll (two flat lists, within trending)
+
   return (
-    <SafeAreaView>
+    <SafeAreaView className="bg-primary">
       <FlatList
         data={posts}
         keyExtractor={(item) => item.$id}
@@ -39,7 +47,7 @@ const Home = () => {
                   Welcome Back
                 </Text>
                 <Text className="text-2xl font-psemibold text-white">
-                  JSMastery
+                  Kamil-Fr
                 </Text>
               </View>
 
