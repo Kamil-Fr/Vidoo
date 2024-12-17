@@ -16,34 +16,30 @@ const Welcome = () => {
     <SafeAreaView className="bg-primary h-full">
       <Loader isLoading={loading} />
 
-      <ScrollView
-        contentContainerStyle={{
-          height: "100%",
-        }}
-      >
+      <ScrollView>
         <View className="w-full flex justify-center items-center h-full px-4">
           <Image
             source={images.logo}
             className="w-[230px] h-[200px]"
             resizeMode="contain"
           />
-
           <Image
             source={images.cards}
             className="max-w-[380px] w-full h-[298px]"
             resizeMode="contain"
           />
 
-          <View className="relative mt-5">
+          <View className="mt-5 flex items-center">
             <Text className="text-3xl text-white font-bold text-center">
               Discover Endless{"\n"}
-              Possibilities with{" "}
+              Possibilities with{"\n"}
               <Text className="text-secondary-200">Vidoo</Text>
             </Text>
 
             <Image
               source={images.path}
-              className="w-[136px] h-[15px] absolute -bottom-2 -right-8"
+              // className="w-[136px] h-[15px] absolute -bottom-2 -right-8"
+              className="w-[136px] h-[15px] mt-2"
               resizeMode="contain"
             />
           </View>
