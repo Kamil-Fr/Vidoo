@@ -31,8 +31,8 @@ const Welcome = () => {
 
           <View className="mt-5 flex items-center">
             <Text className="text-3xl text-white font-bold text-center">
-              Discover Endless{"\n"}
-              Possibilities with{"\n"}
+              Experience Infinite{"\n"}
+              Discoveries with{"\n"}
               <Text className="text-secondary-200">Vidoo</Text>
             </Text>
 
@@ -44,8 +44,8 @@ const Welcome = () => {
           </View>
 
           <Text className="text-sm font-pregular text-gray-100 mt-7 text-center">
-            Where Creativity Meets Innovation: Embark on a Journey of Limitless
-            Exploration with Vidoo
+            Where Imagination Meets Innovation: Start Your Limitless Journey
+            with Vidoo
           </Text>
 
           <CustomButton

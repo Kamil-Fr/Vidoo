@@ -21,6 +21,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
+      "newArchEnabled": true,
       "package": "com.kamil-fr.vidoo"
     },
     "web": {
